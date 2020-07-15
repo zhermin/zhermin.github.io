@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Rank Point Calculator</title>
+	<meta name="author" content="Tam Zher Min">
+	<meta name="description" content="Calculate Your Rank Points and Compare IGP!">
+
+	<script defer src="https://use.fontawesome.com/releases/v5.7.0/js/all.js" integrity="sha384-qD/MNBVMm3hVYCbRTSOW130+CWeRIKbpot9/gR1BHkd7sIct4QKhT1hOPd+2hO8K" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+	<link rel="icon" href="../images/calc-icon.png">
+	<link rel="stylesheet" href="rp-styles.css">
+</head>
+<body>
+	<div class="wrapper">
+
+		<div class="inner-wrapper">
+
+			<div class="help-bg">
+				<div class="help-content">
+					
+					<div class="help-header">
+						<span class="close no-highlight">&times;</span>
+						<h1>Details</h1>
+					</div>
+
+					<div class="actual-content" id="scrollbar">
+						<table>
+							<thead>
+								<tr>
+									<th id="grade">Grade</th>
+									<th id="h-two">H2</th>
+									<th id="h-one">H1</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>A</td>
+									<td>20</td>
+									<td>10</td>
+								</tr>
+								<tr>
+									<td>B</td>
+									<td>17.5</td>
+									<td>8.75</td>
+								</tr>
+								<tr>
+									<td>C</td>
+									<td>15</td>
+									<td>7.5</td>
+								</tr>
+								<tr>
+									<td>D</td>
+									<td>12.5</td>
+									<td>6.25</td>
+								</tr>
+								<tr>
+									<td>E</td>
+									<td>10</td>
+									<td>5</td>
+								</tr>
+								<tr>
+									<td>S</td>
+									<td>5</td>
+									<td>2.5</td>
+								</tr>
+								<tr>
+									<td>U</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>
+							</tbody>
+						</table>
+	
+						<div class="help-desc">
+							<h3>Note:</h3>
+							<ul>
+								<li>
+									<p>If subject combination consists of 4 H2s, the H2 with the lowest grade will be counted as the H1</p>
+								</li>
+								<li>
+									<p>Higher Mother Tongue from O'Levels can be counted as H1 MTL (A/B/C5/C6/D7 = A/B/C/D/E)</p>
+								</li>
+								<li>
+									<p>NUS <a href="https://www.straitstimes.com/singapore/education/nus-applicants-to-get-bonus-points-for-1st-choice-courses" target="_blank">awards an extra 1.25 points</a> (equivalent to one H1 grade) for your first choice</p>
+								</li>
+								<li>
+									<p>If you wish to retake, you must take 3 H2s + GP/KI in one sitting</p>
+								</li>
+								<br>
+								<li id="donate">
+									<a href="../images/paylah_qr_code.jpeg" target="_blank">DONATE</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="header">
+				<h1>Rank Point Calculator</h1>
+				<h3>By <a href="http://cyanidicism.com/" target="_blank">Tam Zher Min</a></h3>
+				<button id="help" title="More Details"><i class="far fa-question-circle"></i></button>
+			</div>
+
+			<form method="post" id="rp-form">
+				
+				<div class="rp-box subs-grp no-highlight" id="main-box">
+					
+					<div>
+						<label for="sub-1">H2</label>
+						<select name="subj-1">
+							<option value="20" selected>A</option>
+							<option value="17.5">B</option>
+							<option value="15">C</option>
+							<option value="12.5">D</option>
+							<option value="10">E</option>
+							<option value="5">S</option>
+							<option value="0">U</option>
+						</select>
+					</div>
+					
+					<div>
+						<label for="sub-2">H2</label>
+						<select name="subj-2">
+							<option value="20" selected>A</option>
+							<option value="17.5">B</option>
+							<option value="15">C</option>
+							<option value="12.5">D</option>
+							<option value="10">E</option>
+							<option value="5">S</option>
+							<option value="0">U</option>
+						</select>
+					</div>
+
+					<div>
+						<label for="sub-3">H2</label>
+						<select name="subj-3">
+							<option value="20" selected>A</option>
+							<option value="17.5">B</option>
+							<option value="15">C</option>
+							<option value="12.5">D</option>
+							<option value="10">E</option>
+							<option value="5">S</option>
+							<option value="0">U</option>
+						</select>
+					</div>
+
+					<div>
+						<label for="sub-4">H1</label>
+						<select name="subj-4">
+							<option value="10" selected>A</option>
+							<option value="8.75">B</option>
+							<option value="7.5">C</option>
+							<option value="6.25">D</option>
+							<option value="5">E</option>
+							<option value="2.5">S</option>
+							<option value="0">U</option>
+						</select>
+					</div>
+
+				</div>
+
+				<div class="rp-box subs-grp no-highlight">
+					
+					<div>
+						<label for="sub-5">GP</label>
+						<select name="subj-5">
+							<option value="10" selected>A</option>
+							<option value="8.75">B</option>
+							<option value="7.5">C</option>
+							<option value="6.25">D</option>
+							<option value="5">E</option>
+							<option value="2.5">S</option>
+							<option value="0">U</option>
+						</select>
+					</div>
+
+					<div>
+						<label for="sub-6">PW</label>
+						<select name="subj-6">
+							<option value="10" selected>A</option>
+							<option value="8.75">B</option>
+							<option value="7.5">C</option>
+							<option value="6.25">D</option>
+							<option value="5">E</option>
+							<option value="2.5">S</option>
+							<option value="0">U</option>
+						</select>
+					</div>
+
+					<div>
+						<label for="sub-7">MT</label>
+						<select name="subj-7">
+							<option value="0">&mdash;</option>
+							<option value="10" selected>A</option>
+							<option value="8.75">B</option>
+							<option value="7.5">C</option>
+							<option value="6.25">D</option>
+							<option value="5">E</option>
+							<option value="2.5">S</option>
+							<option value="0">U</option>
+						</select>
+					</div>
+
+				</div>
+
+				<h3 id="igp-desc">Compare Course's <span title="Indicative Grade Profile"><u>IGP</u></span></h3>
+
+				<div class="igp-box subs-grp no-highlight">
+
+					<div>
+						<select name="igp-1">
+							<option value="20" selected>A</option>
+							<option value="17.5">B</option>
+							<option value="15">C</option>
+							<option value="12.5">D</option>
+							<option value="10">E</option>
+							<option value="5">S</option>
+							<option value="0">U</option>
+						</select>
+					</div>
+
+					<div>
+						<select name="igp-2">
+							<option value="20" selected>A</option>
+							<option value="17.5">B</option>
+							<option value="15">C</option>
+							<option value="12.5">D</option>
+							<option value="10">E</option>
+							<option value="5">S</option>
+							<option value="0">U</option>
+						</select>
+					</div>
+					
+					<div>
+						<select name="igp-3">
+							<option value="20" selected>A</option>
+							<option value="17.5">B</option>
+							<option value="15">C</option>
+							<option value="12.5">D</option>
+							<option value="10">E</option>
+							<option value="5">S</option>
+							<option value="0">U</option>
+						</select>
+					</div>
+					/
+					<div>
+						<select name="igp-4">
+							<option value="10" selected>A</option>
+							<option value="8.75">B</option>
+							<option value="7.5">C</option>
+							<option value="6.25">D</option>
+							<option value="5">E</option>
+							<option value="2.5">S</option>
+							<option value="0">U</option>
+						</select>
+					</div>
+
+				</div>
+
+			</form>
+
+			<div class="results-wrapper">
+
+				<span class="circle-border" id="circ-1">90</span>			
+				<span class="circle-border" id="circ-2">90</span>
+				<span class="circle-border" id="circ-3">85</span>
+				<span class="circle-border" id="circ-4">+5</span>
+				
+				<div id="higher-box">
+					<h2>HIGHER</h2>
+					<h4 id="higher">NO MT</h4>
+				</div>				
+				<div id="lower-box">
+					<h3>LOWER</h3>
+					<h4 id="lower">+MT</h4>
+				</div>
+				<div id="igp-text">
+					<h3>Course IGP</h3>
+					<p><em>(GP & PW<br>assumed C)</em></p>
+				</div>				
+				<div id="diff-text">
+					<h3>Difference</h3>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="rp-scripts.js"></script>
+</html>

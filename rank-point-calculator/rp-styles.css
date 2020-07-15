@@ -1,0 +1,433 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Josefin Sans", "Arial", sans-serif;
+	font-weight: 100;
+	text-shadow: -1px -1px 1px rgba(255,255,255,.1), 2px 2px 2px rgba(0,0,0,.5);
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
+}
+
+/* Prevents Text Highlighting */
+.no-highlight {
+	-webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, Chrome and Opera */
+}
+
+/* Main Wrappers */
+.wrapper {
+	min-height: calc(var(--vh, 1vh) * 100);
+	height: calc(var(--vh, 1vh) * 100);
+	width: 100%;
+	text-align: center;
+	color: #f4f4f4;
+
+	background: #8E0E00;
+	background: -webkit-linear-gradient(to bottom left, #8E0E00, #1F1C18);
+	background: linear-gradient(to bottom left, #8E0E00, #1F1C18);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: auto;
+}
+
+.inner-wrapper {
+	margin: 30px 20px 0 20px;
+	height: calc(var(--vh, 1vh) * 100);
+}
+
+/* Header with Title and Sub-Texts */
+.header {
+	padding: 0 20px 20px 20px;
+	border-bottom: 1px solid #f4f4f4;
+	margin: 0 20px 20px 20px;
+}
+
+.header h1 {
+	font-size: 40px;
+}
+
+.header h3 {
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.header a, .header a:visited {
+	color: #f4f4f4;
+}
+
+/* Help Button to open up Modal Window */
+#help {
+	background-color: transparent;
+	border: none;
+	color: #f4f4f4;
+	cursor: pointer;
+	font-size: 24px;
+}
+
+/* Help Modal Overlay */
+.help-bg {
+	/* Modal & Transition Configuration */
+	visibility: hidden;
+	opacity: 0;
+	transition: .5s ease;
+	box-sizing: border-box;
+
+	width: 100%;
+	height: calc(var(--vh, 1vh) * 100);
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+/* Class to change to visible and add fade in animation */
+.active {
+	visibility: visible;
+	opacity: 1;
+	animation-name: fadeIn;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+}
+
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+/* Modal Content */
+.help-content {
+	width: 500px;
+	max-width: 500px;
+	height: 90%;
+	max-height: 90%;
+	background-color: rgba(51,51,51,0.9);
+	color: #f4f4f4;
+	padding: 20px 0;
+	margin: 0 20px;
+	border-radius: 8px;
+	box-shadow: 5px 5px 10px #000;
+
+	position: relative;
+	box-sizing: border-box;
+}
+
+.help-header {
+	padding-bottom: 10px;
+	margin: 0 20px 10px 20px;
+	border-bottom: 1px solid #f4f4f4;
+}
+
+.close {
+	position: absolute;
+	top: 0;
+	right: 15px;
+	font-size: 40px;
+	cursor: pointer;
+}
+
+.actual-content {
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 90%;
+	padding: 0 20px;
+	line-height: 1.5;
+}
+
+/* Grade Table */
+.actual-content table, .actual-content th, .actual-content td {
+	border: 1px solid #f4f4f4;
+	border-collapse: collapse;
+}
+
+.actual-content table {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.actual-content th {
+	padding: 5px 0;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: rgba(230, 230, 230, 0.5);
+}
+
+.actual-content td {
+	font-size: 18px;
+}
+
+.actual-content tbody tr:nth-child(even) {
+	background-color: rgba(125, 125, 125, 0.5);
+}
+
+#grade {
+	width: 20%;
+}
+
+#h-two, #h-one {
+	width: 40%;
+}
+
+/* Notes Section in Help Window */
+.help-desc {
+	text-align: left;
+	margin-left: 12px;
+	padding-bottom: 30px;
+}
+	
+.help-desc p {
+	font-size: 16px;
+}
+
+.help-desc a, .help-desc a:visited {
+	color: #f4f4f4;
+}
+
+#donate {
+	text-align: right;
+	list-style: none;
+	font-size: 12px;
+	word-spacing: 1;	
+}
+
+#donate a {
+	text-decoration: none;
+	border: 1px solid #f4f4f4;
+	border-radius: 5px;
+	padding: 3px 5px;
+}
+
+#donate a:hover {
+	color: #000;
+	background: #f4f4f4;
+	text-shadow: none;
+}
+
+/* Form Styling */
+#rp-form {
+	border-bottom: 1px solid #f4f4f4;
+	margin: 0 20px 20px 20px;
+}
+
+/* Box to contain one row of select items but only for RP Section */
+.rp-box {
+	margin-bottom: 20px;
+}
+
+/* Generalized box containing rows of select items */
+.subs-grp {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 24px;
+}
+
+.subs-grp div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 0 20px;
+	box-sizing: border-box;
+}
+
+.subs-grp select {
+	height: 20px;
+	width: 50px;
+	border: 1px solid #f4f4f4;
+	border-radius: 5px;
+	background-color: transparent;
+	color: #f4f4f4;
+	box-sizing: border-box;
+}
+
+.subs-grp select option {
+	background: #771105;
+}
+
+/* Wrapper for IGP form section */
+.igp-box {
+	margin: 5px 0 20px 0;
+}
+
+.igp-box div {
+	margin: 0 19px;
+}
+
+.igp-box select {
+	height: 20px;
+}
+
+/* Grid Wrapper for both RP Results & IGP Results */
+.results-wrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-areas: 
+			"circ_one circ_two circ_three circ_four"
+			"higher_text lower_text igp_text diff_text";
+	grid-gap: 5px;
+	margin: 0 20px;
+	padding: 0 20px;
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+}
+
+.results-wrapper div {
+	margin-top: -20px;
+}
+
+.circle-border {
+	border: 1px solid #f4f4f4;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	box-sizing: content-box;
+}
+
+#circ-1 {
+	grid-area: circ_one;
+	font-size: 30px;
+	height: 120px;
+	width: 120px;
+}
+
+#circ-2 {
+	grid-area: circ_two;
+	color: #aaa;
+	border: 1px solid #aaa;
+	font-size: 30px;
+	height: 100px;
+	width: 100px;
+}
+
+#circ-3 {
+	grid-area: circ_three;
+	font-size: 30px;
+	height: 120px;
+	width: 120px;
+}
+
+#circ-4 {
+	grid-area: circ_four;
+	color: lime;
+	border: 1px solid lime;
+	font-size: 30px;
+	height: 100px;
+	width: 100px;
+}
+
+#higher-box {
+	grid-area: higher_text;
+}
+
+#higher-box h2, #lower-box h3 {
+	margin-bottom: 10px;
+}
+
+#lower-box {
+	grid-area: lower_text;
+	color: #aaa;
+}
+
+#igp-text {
+	grid-area: igp_text;
+}
+
+#igp-text h3 {
+	margin: 10px 0;
+}
+
+#igp-text p {
+	font-size: 14px;
+}
+
+#diff-text {
+	grid-area: diff_text;
+}
+
+@media (max-width: 600px) {
+	.results-wrapper {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+		grid-template-areas: 
+			"circ_one circ_two"
+			"higher_text lower_text"
+			"circ_three circ_four"
+			"igp_text diff_text";
+		grid-gap: 0;
+		padding: 0;
+	}
+
+	.results-wrapper div {
+		margin-top: -40px;
+	}
+
+	#circ-3, #circ-4, #igp-text, #diff-text {
+		margin-top: -70px;
+	}
+}
+
+@media (max-width: 400px) {
+	.subs-grp div {
+		font-size: 16px;
+	}
+
+	#igp-desc {
+		font-size: 14px;
+	}
+
+	.subs-grp select {
+		width: 40px;
+	}
+
+	#rp-form, .header {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.results-wrapper {
+		margin: 0 45px;
+	}
+}
+
+/* Scrollbar Styling for all Help Modal Window - Doesn't work for Firefox */
+#scrollbar::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	   -moz-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	        box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+#scrollbar::-webkit-scrollbar {
+	width: 12px;
+	background-color: transparent;
+}
+
+#scrollbar::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #555;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	   -moz-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	        box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+}

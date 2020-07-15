@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	padding: 0;
+    font-family: "Barlow Condensed", "Arial", sans-serif;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
+}
+
+.no-highlight {
+	-webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, Chrome and Opera */
+}
+
+.wrapper {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    color: #f4f4f4;
+
+	background-image: url(images/ngo-bg.png);	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	
+	display: flex;
+	justify-content: flex-start;
+    align-items: center;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 100px 50px;
+}
+
+#main-content h1 {
+    font-weight: 100;
+    font-size: 5em;   
+}
+
+#main-content nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 80px 0 5px;
+}
+
+#main-content a {
+    color: #f4f4f4;
+}
+
+#main-content a:hover {
+    opacity: 0.8;
+}
+
+.fave-icons {
+    font-size: 2em;
+}
+
+#issuu {
+    height: 34px;
+    width: 34px;
+    margin-top: 5px;
+}
+
+@media (max-width: 900px) {
+    #main-content {
+        margin: 0 0 150px 50px;
+    }
+
+    #main-content nav ul {
+        margin: 10px 80px 0 4px;
+    }
+
+    #main-content h1 {
+        font-size: 4em;
+    }
+}
+
+@media (max-width: 600px) {
+    #main-content {
+        margin: 0 0 250px 50px;
+    }
+
+    #main-content h1 {
+        font-size: 3.5em;
+    }
+
+    #main-content nav ul {
+        margin: 10px 80px 0 3px;
+    }
+
+    #middle {
+        margin: 0 10px;
+    }
+}

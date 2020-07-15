@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ngo JunYi</title>
+    <meta name="description" content="Ngo JunYi's Portfolio Site">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.7.0/js/all.js" integrity="sha384-qD/MNBVMm3hVYCbRTSOW130+CWeRIKbpot9/gR1BHkd7sIct4QKhT1hOPd+2hO8K" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+
+    <link rel="icon" href="images/ngo-icon.png">
+    <link rel="stylesheet" href="ngo-styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="main-content">
+            <h1>NGO JUNYI</h1>
+            <nav class="no-highlight">
+                <ul>
+                    <li class="fave-icons">
+                        <a href="mailto:junyingo@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                    </li>
+                    <li class="fave-icons" id="middle">
+                        <a href="https://www.linkedin.com/in/junyi-ngo-28b985119/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://issuu.com/ngojunyi" target="_blank"><img src="images/issuu.png" id="issuu"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</body>
+<script>
+    let vh = window.document.documentElement.clientHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+    window.addEventListener("resize", function() {
+        let vh = window.document.documentElement.clientHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
+</script>
+</html>
