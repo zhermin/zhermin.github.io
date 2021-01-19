@@ -1,13 +1,15 @@
 # This is my own Personal Portfolio Website
+_A mixture of a static website written in html/css/js and a more recent movie searching react webapp_
+
 ---
 
 ## Navigation
 * About Me
 * Projects
     * Live Sites
+        * A Movie Searching React Project using themoviedb API named ZOPCORN!
         * Rank-Point Calculator for A'Level Students / Graduates
-        * Link to my Tech Blog managed by WordPress
-        * Portfolio Site for a Friend
+        * Simple Landing Portfolio Site for a Friend
     * Source Codes
         * Link to my Main GitHub Page  
         * GitHub Link to this Page (Source Code)
@@ -27,11 +29,8 @@
 ---
 
 ## More Details
-Just came out of 2 years of Military Service and have been working on some Pet Projects, big and small\
-This Personal Website so far has been the __BIGGEST__ Project I've embarked on
+After 2 years of National Service back in 2018 to 2019 and working on some pet projects, writing this website from scratch was a pretty tedious task considering my lack of experience back then. 
 
-Read More about Me on my Website itself or Contact Me through my Social Media Links
+I have since added my movie searching react project written in 2020 during COVID-19 lockdown under Projects.
 
----
-
-_This GitHub Repo is for anyone who might want to view the Source Code of my Static Pages; feel free to copy it_
+Read more about me in the website itself [here](https://zhermin.github.io/) or contact me through social media!
