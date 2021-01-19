@@ -7,7 +7,7 @@ _A mixture of a static website written in html/css/js and a more recent movie se
 * About Me
 * Projects
     * Live Sites
-        * A Movie Searching React Project using themoviedb API named ZOPCORN!
+        * A Movie Searching React Project using themoviedb API named ZOPCORN! (screenshot below)
         * Rank-Point Calculator for A'Level Students / Graduates
         * Simple Landing Portfolio Site for a Friend
     * Source Codes
@@ -31,6 +31,8 @@ _A mixture of a static website written in html/css/js and a more recent movie se
 ## More Details
 After 2 years of National Service back in 2018 to 2019 and working on some pet projects, writing this website from scratch was a pretty tedious task considering my lack of experience back then. 
 
-I have since added my movie searching react project written in 2020 during COVID-19 lockdown under Projects.
+I have since added my movie searching react project written in 2020 during COVID-19 lockdown under Projects shown below. 
+
+![ZOPCORN! Webapp](https://github.com/zhermin/zhermin.github.io/blob/master/images/screenshot_avengers.jpg "Screenshot of ZOPCORN!")
 
 Read more about me in the website itself [here](https://zhermin.github.io/) or contact me through social media!
