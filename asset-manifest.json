@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/zopcorn/static/css/main.706702d3.chunk.css",
+    "main.js": "/zopcorn/static/js/main.b9109078.chunk.js",
+    "main.js.map": "/zopcorn/static/js/main.b9109078.chunk.js.map",
+    "runtime-main.js": "/zopcorn/static/js/runtime-main.ef71e93b.js",
+    "runtime-main.js.map": "/zopcorn/static/js/runtime-main.ef71e93b.js.map",
+    "static/js/2.f644d781.chunk.js": "/zopcorn/static/js/2.f644d781.chunk.js",
+    "static/js/2.f644d781.chunk.js.map": "/zopcorn/static/js/2.f644d781.chunk.js.map",
+    "index.html": "/zopcorn/index.html",
+    "precache-manifest.c4f7d9852794943e5fdbb852f69e19e7.js": "/zopcorn/precache-manifest.c4f7d9852794943e5fdbb852f69e19e7.js",
+    "service-worker.js": "/zopcorn/service-worker.js",
+    "static/css/main.706702d3.chunk.css.map": "/zopcorn/static/css/main.706702d3.chunk.css.map",
+    "static/js/2.f644d781.chunk.js.LICENSE.txt": "/zopcorn/static/js/2.f644d781.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ef71e93b.js",
+    "static/js/2.f644d781.chunk.js",
+    "static/css/main.706702d3.chunk.css",
+    "static/js/main.b9109078.chunk.js"
+  ]
+}
