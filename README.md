@@ -1,4 +1,4 @@
-# This is my own Personal Portfolio Website
+# This is my Portfolio Website
 _A mixture of a static website written in html/css/js and a more recent movie searching react webapp_
 
 ---
@@ -31,7 +31,7 @@ _A mixture of a static website written in html/css/js and a more recent movie se
 ## More Details
 After 2 years of National Service back in 2018 to 2019 and working on some pet projects, writing this website from scratch was a pretty tedious task considering my lack of experience back then. 
 
-I have since added my movie searching react project written in 2020 during COVID-19 lockdown under Projects shown below. 
+I have since added my movie searching react project [here](https://zhermin.github.io/zopcorn/) written in 2020 during COVID-19 lockdown shown below. 
 
 ![ZOPCORN! Webapp](https://github.com/zhermin/zhermin.github.io/blob/master/images/screenshot_avengers.jpg "Screenshot of ZOPCORN!")
 
